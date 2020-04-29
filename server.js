@@ -7,7 +7,7 @@ const cors = require('cors');
 var port = process.env.PORT || 3000; //El servidor correrá sobre el puerto 3000
 
 // Configuracion para acceder a la base de datos en MongoDB
-mongoose.connect('mongodb://recetas_3:recetas@localhost:27017/recetas_3', { useNewUrlParser: true, useUnifiedTopology: true }); // Hacemos la conexión a la base de datos de Mongo con nombre "MeanExample"
+mongoose.connect('mongodb://recetas_3:recetas@localhost:27017/recetas_3', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //Con este paquete se podrán responder las request que se manden desde el servicio de Angular
 app.use(cors({ origin: 'http://localhost:4200' }));
